@@ -175,7 +175,7 @@ body {
     .sun {
         animation-name: sunup;
         animation-duration: 6s;
-        animation-delay: 3s;
+        animation-delay: 2s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
     }
@@ -193,7 +193,7 @@ body {
     }
     body {
         animation-name: bgcolor;
-        animation-duration: 3s;
+        animation-duration: 4s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
     }
