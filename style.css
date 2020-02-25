@@ -118,7 +118,7 @@ body {
     100% {left: 130px; top: 80px; background-color: rgb(221, 221, 0, 0.6);}
 }
 @keyframes sunup {
-    0% {width: 100px; height: 100px; left: 115px; top: 600px; background-color:rgba(172, 34, 0, 0);}
+    0% {width: 100px; height: 100px; left: 115px; top: 620px; background-color:rgba(172, 34, 0, 0);}
     5% {width: 100px; height: 100px; background-color:rgba(172, 34, 0, 0.8);}
     100% {width: 100px; height: 100px; left: 130px; top: 80px; background-color:rgba(255, 155, 6, 0.6);}
 }
