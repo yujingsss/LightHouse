@@ -1,0 +1,244 @@
+body {
+    background-color: black;
+    display: inline-block;
+    height: 100vh;
+    width: 100vw;
+    margin: 0; 
+}
+.moon {
+     background-color: rgba(255, 255, 0, 0.5);
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     position: absolute;
+     left: 130px;
+     top: 80px;
+     z-index: 1;
+}
+.mountain {
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    border-top: 0px solid transparent;
+    border-left: 160px solid transparent;
+    border-bottom: 400px solid rgb(21, 8, 56);
+    border-right: 160px solid transparent;
+    z-index: 3;
+}
+.mountain-shadow {
+    position: absolute;
+    bottom: 0;
+    left: 260px;
+    border-top: 0 solid transparent;
+    border-right: 140px solid transparent;
+    border-bottom: 400px solid rgb(10, 2, 44);
+    border-left: 0px solid transparent;
+    z-index: 3;
+    transform-origin: top right;
+    transform: skewX(18deg);
+}
+.mountain-1 {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    border-top: 0px solid transparent;
+    border-left: 120px solid transparent;
+    border-bottom: 200px solid rgb(25, 10, 65);
+    border-right: 120px solid transparent;
+    z-index: 4;
+}
+.mountain-shadow-1 {
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    border-top: 0 solid transparent;
+    border-right: 120px solid transparent;
+    border-bottom: 200px solid rgb(10, 2, 44);
+    border-left: 0px solid transparent;
+    z-index: 4;
+    transform-origin: top right;
+    transform: skewX(16deg);
+}
+.mountain-2 {
+    position: absolute;
+    bottom: 0;
+    left: 300px;
+    border-top: 0px solid transparent;
+    border-left: 140px solid transparent;
+    border-bottom: 280px solid rgb(20, 7, 53);
+    border-right: 140px solid transparent;
+    z-index: 2;
+}
+.mountain-shadow-2 {
+    position: absolute;
+    bottom: 0;
+    left: 440px;
+    border-top: 0 solid transparent;
+    border-right: 120px solid transparent;
+    border-bottom: 280px solid rgb(10, 2, 44);
+    border-left: 0px solid transparent;
+    z-index: 2;
+    transform-origin: top right;
+    transform: skewX(16deg);
+}
+.light {
+    margin: 0;
+    z-index: 5;
+    height: 600px;
+    position: absolute;
+    left: 90%;
+    bottom: 8%;
+    border-top: 0px solid transparent;
+    border-left: 75px solid transparent;
+    border-bottom: 650px solid rgba(255, 255, 151, 0.5);
+    border-right: 75px solid transparent;
+    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 105px;
+    transform-origin: top 10%;
+    transform: skewX(-10deg);
+    animation-name: lightmove;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+} 
+.sun {
+    z-index: 1; 
+    opacity: 0.6;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+@keyframes lightmove {
+    10% {transform: skewX(-40deg);}
+    50% {transform: skewX(-55deg);}
+    80% {transform: skewX(40deg);}
+}
+@keyframes moondown {
+    30% {background-color: rgba(221, 181, 0, 0.5);}
+    100% {left: 500px; top: 600px; background-color: rgba(221, 181, 0, 0);}
+}
+@keyframes moonup {
+    0% {left: 0px; top: 700px; background-color: rgba(221, 181, 0, 0);}
+    100% {left: 130px; top: 80px; background-color: rgb(221, 221, 0, 0.5); }
+}
+@keyframes sunup {
+    0% {left: 85px; top: 580px; background-color:rgb(172, 34, 0)}
+    100% {left: 130px; top: 80px; background-color:rgb(255, 155, 6, 0.8)}
+}
+@keyframes sundown {
+    0% {left: 130px; top: 80px;}
+    100% {left: 430px; top: 590px; }
+}
+@keyframes mountaincolor {
+    50% {border-color: transparent transparent rgb(21, 8, 56) transparent;}
+    100% {border-color: transparent transparent rgb(144, 154, 155) transparent;}
+}
+@keyframes shadowcolor {
+    50% {border-color: transparent transparent rgb(10, 2, 44) transparent;}
+    100% {border-color: transparent transparent rgb(101, 110, 110) transparent;}
+}
+@keyframes mountaincolor1 {
+    0% {border-color: transparent transparent rgb(144, 154, 155) transparent;}
+    100% {border-color: transparent transparent rgb(176, 207, 194) transparent;}
+}
+@keyframes shadowcolor1 {
+    0% {border-color: transparent transparent rgb(101, 110, 110) transparent;}
+    100% {border-color: transparent transparent rgb(15, 94, 78) transparent;}
+}
+@keyframes bgcolor {
+    0% {background-color: black;}
+    100% {background-color: rgb(122, 0, 0);}
+}
+@keyframes bgcolor1 {
+    0% {background-color: rgb(122, 0, 0);}
+    100% {background-color: rgb(200, 173, 230);}
+}
+@media (min-width: 1000px) {
+    .light {
+        opacity: 1;
+    }
+    .moon {
+        animation-name: moonup;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+    .light {
+        opacity: 0;
+        transition: opacity 1.5s ease-in-out;
+    }
+    .moon {
+        animation-name: moondown;
+        animation-duration: 8s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    .sun {
+        background-color: rgb(172, 34, 0);
+        left: 85px; 
+        top: 580px;
+        animation-name: sunup;
+        animation-duration: 6s;
+        animation-delay: 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    .mountains {
+        animation-name: mountaincolor;
+        animation-duration: 8s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    .shadow {
+        animation-name: shadowcolor;
+        animation-duration: 8s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    body {
+        animation-name: bgcolor;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+}
+@media (max-width: 700px) {
+    .light {
+        opacity: 0;
+        transition: opacity 1.5s ease-in-out;
+    }
+    .moon {
+        position: absolute;
+        left: 480px; 
+        top: 600px;
+    }
+    .sun {
+        left: 130px; 
+        top: 80px; 
+        background-color:rgb(255, 155, 6, 0.8);
+        animation-name: sundown;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    .mountains {
+        animation-name: mountaincolor1;
+        animation-duration: 8s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    .shadow {
+        animation-name: shadowcolor1;
+        animation-duration: 8s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    body {
+        animation-name: bgcolor1;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+}
