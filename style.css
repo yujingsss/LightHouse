@@ -72,14 +72,15 @@ body {
 }
 .light {
     margin: 0;
+    padding: 20px;
     z-index: 5;
-    height: 600px;
+    height: 400px;
     position: absolute;
     left: 90%;
-    bottom: 8%;
+    bottom: 15%;
     border-top: 0px solid transparent;
     border-left: 75px solid transparent;
-    border-bottom: 650px solid rgba(255, 255, 151, 0.5);
+    border-bottom: 650px solid rgba(255, 255, 151, 0.4);
     border-right: 75px solid transparent;
     border-bottom-right-radius: 45px;
     border-bottom-left-radius: 105px;
