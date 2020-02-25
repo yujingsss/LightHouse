@@ -204,8 +204,8 @@ body {
     }
     .moon {
         opacity: 0;
-        left: 500px; 
-        top: 650px; 
+        left: 450px; 
+        top: 700px; 
         background-color: rgba(221, 181, 0);
     }
     .sun {
