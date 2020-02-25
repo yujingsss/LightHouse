@@ -109,8 +109,8 @@ body {
     100% {width: 100px; height: 100px; left: 500px; top: 650px; background-color: rgba(221, 181, 0); opacity: 0;}
 }
 @keyframes moonup {
-    0% {opacity:0.6; left: 50px; top: 700px; background-color: rgba(221, 181, 0);}
-    100% {opacity: 0.6; left: 130px; top: 80px; background-color: rgb(221, 221, 0);}
+    0% {width: 100px; height: 100px; opacity:0.6; left: 50px; top: 700px; background-color: rgba(221, 181, 0);}
+    100% {width: 100px; height: 100px; opacity: 0.6; left: 130px; top: 80px; background-color: rgb(221, 221, 0);}
 }
 @keyframes sunup {
     0% {width: 100px; height: 100px; left: 115px; top: 620px; background-color:rgba(172, 34, 0, 0);}
