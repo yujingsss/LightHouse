@@ -12,6 +12,7 @@ body {
      position: absolute;
      left: 130px;
      top: 80px;
+     opacity: 0;
      z-index: 1;
 }
 .mountain {
@@ -110,12 +111,12 @@ body {
     80% {transform: skewX(40deg);}
 }
 @keyframes moondown {
-    30% {background-color: rgba(221, 181, 0, 0.6);}
-    100% {left: 500px; top: 650px; background-color: rgba(221, 181, 0, 0);}
+    30% {background-color: rgba(221, 181, 0); opacity: 0.6;}
+    100% {left: 500px; top: 650px; background-color: rgba(221, 181, 0); opacity: 0;}
 }
 @keyframes moonup {
-    0% {left: 0px; top: 700px; background-color: rgba(221, 181, 0, 0);}
-    100% {left: 130px; top: 80px; background-color: rgb(221, 221, 0, 0.6);}
+    0% {opacity:0.6; left: 0px; top: 700px; background-color: rgba(221, 181, 0);}
+    100% {opacity: 0.6; left: 130px; top: 80px; background-color: rgb(221, 221, 0);}
 }
 @keyframes sunup {
     0% {width: 100px; height: 100px; left: 115px; top: 620px; background-color:rgba(172, 34, 0, 0);}
