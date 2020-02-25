@@ -202,9 +202,12 @@ body {
         opacity: 0;
         transition: opacity 1.5s ease-in-out;
     }
-    /* .moon {
+    .moon {
         opacity: 0;
-    } */
+        left: 500px; 
+        top: 650px; 
+        background-color: rgba(221, 181, 0);
+    }
     .sun {
         animation-name: sundown;
         animation-duration: 7s;
