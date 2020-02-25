@@ -10,8 +10,6 @@ body {
      height: 100px;
      border-radius: 50%;
      position: absolute;
-     left: 130px;
-     top: 80px;
      opacity: 0;
      z-index: 1;
 }
@@ -111,7 +109,7 @@ body {
     80% {transform: skewX(40deg);}
 }
 @keyframes moondown {
-    30% {background-color: rgba(221, 181, 0); opacity: 0.6;}
+    30% {left: 130px; top: 80px; background-color: rgba(221, 181, 0); opacity: 0.6;}
     100% {left: 500px; top: 650px; background-color: rgba(221, 181, 0); opacity: 0;}
 }
 @keyframes moonup {
@@ -204,9 +202,9 @@ body {
         opacity: 0;
         transition: opacity 1.5s ease-in-out;
     }
-    .moon {
+    /* .moon {
         opacity: 0;
-    }
+    } */
     .sun {
         animation-name: sundown;
         animation-duration: 7s;
