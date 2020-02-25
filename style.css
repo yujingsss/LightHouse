@@ -159,7 +159,7 @@ body {
         opacity:0.6; 
         left: 130px; 
         top: 80px;
-        transition: left 4s ease-in-out, top 4s ease-in-out, opacity 4s ease-in-out;
+        transition: position 4s ease-in-out, opacity 4s ease-in-out;
         /* animation-name: moonup;
         animation-duration: 4s;
         animation-iteration-count: 1;
