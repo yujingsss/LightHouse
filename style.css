@@ -4,11 +4,6 @@ body {
     width: 2560px;
     margin: 0; 
 }
-.moon {
-     border-radius: 50%;
-     position: absolute;
-     z-index: 1;
-}
 .mountain {
     position: absolute;
     bottom: 0;
@@ -94,6 +89,11 @@ body {
     animation-duration: 8s;
     animation-iteration-count: infinite;
 } 
+.moon {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
 .sun {
     z-index: 1; 
     border-radius: 50%;
@@ -199,12 +199,12 @@ body {
         opacity: 0;
         transition: opacity 1.5s ease-in-out;
     }
-    .moon {
+    /* .moon {
         opacity: 0;
         left: 450px; 
         top: 700px; 
         background-color: rgba(221, 181, 0);
-    }
+    } */
     .sun {
         animation-name: sundown;
         animation-duration: 7s;
