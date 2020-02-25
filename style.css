@@ -204,9 +204,7 @@ body {
         transition: opacity 1.5s ease-in-out;
     }
     .moon {
-        position: absolute;
-        left: 480px; 
-        top: 600px;
+        opacity: 0;
     }
     .sun {
         animation-name: sundown;
