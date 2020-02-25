@@ -96,7 +96,7 @@ body {
     height: 100px; 
     position: absolute;
     left: 50px; 
-    top: 650px; 
+    top: 600px; 
     background-color: rgba(221, 181, 0, 0);
     z-index: 1;
 }
