@@ -1,9 +1,7 @@
 body {
     background-color: black;
-    /* height: 100vh;
-    width: 100vw; */
-    height: 790px;
-    width: 1400px;
+    height: 100vh;
+    width: 100vw;
     margin: 0; 
 }
 .mountain {
@@ -12,7 +10,7 @@ body {
     left: 100px;
     border-top: 0px solid transparent;
     border-left: 160px solid transparent;
-    border-bottom: 400px solid rgb(21, 8, 56);
+    border-bottom: 400px solid rgb(25, 8, 70);
     border-right: 160px solid transparent;
     z-index: 3;
 }
@@ -34,7 +32,7 @@ body {
     left: 30px;
     border-top: 0px solid transparent;
     border-left: 120px solid transparent;
-    border-bottom: 200px solid rgb(25, 10, 65);
+    border-bottom: 200px solid rgb(25, 8, 70);
     border-right: 120px solid transparent;
     z-index: 4;
 }
@@ -56,7 +54,7 @@ body {
     left: 300px;
     border-top: 0px solid transparent;
     border-left: 140px solid transparent;
-    border-bottom: 280px solid rgb(20, 7, 53);
+    border-bottom: 280px solid rgb(25, 8, 70);
     border-right: 140px solid transparent;
     z-index: 2;
 }
@@ -79,7 +77,7 @@ body {
     height: 600px;
     position: absolute;
     left: 90%;
-    bottom: 15%;
+    bottom: 17.5%;
     border-top: 0px solid transparent;
     border-left: 75px solid transparent;
     border-bottom: 650px solid rgba(255, 255, 151, 0.4);
@@ -107,30 +105,71 @@ body {
     border-radius: 50%;
     position: absolute;
 }
+.stars {
+    height: 4px;
+    width: 4px;
+    background-color: rgb(252, 249, 222, 0);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+.star1 {
+    top: 105px;
+    left: 150px;
+}
+.star2 {
+    top: 130px;
+    left: 250px;
+}
+.star3 {
+    top: 200px;
+    left: 320px;
+}
+.star4 {
+    top: 280px;
+    left: 390px;
+}
+.star5 {
+    top: 360px;
+    left: 380px;
+}
+.star6 {
+    top: 420px;
+    left: 490px;
+}
+.star7 {
+    top: 355px;
+    left: 570px;
+}
 @keyframes lightmove {
     10% {transform: skewX(-40deg);}
     50% {transform: skewX(-55deg);}
     80% {transform: skewX(40deg);}
 }
 @keyframes moondown {
-    0% {width: 100px; height: 100px; left: 130px; top: 80px; background-color: rgba(221, 221, 0, 0.6);}
-    100% {width: 100px; height: 100px; left: 500px; top: 600px; background-color: rgba(221, 181, 0, 0);}
+    0% {width: 100px; height: 100px; left: 130px; top: 80px; background-color: rgba(250, 205, 3, 0.8);}
+    100% {width: 100px; height: 100px; left: 500px; top: 600px; background-color: rgba(250, 205, 3, 0);}
 }
 @keyframes moonup {
-    0% {width: 100px; height: 100px; left: 50px; top: 600px; background-color: rgba(221, 181, 0, 0.6);}
-    100% {width: 100px; height: 100px; left: 130px; top: 80px; background-color: rgb(221, 221, 0, 0.6);}
+    0% {width: 100px; height: 100px; left: 50px; top: 600px; background-color: rgba(250, 205, 3, 0.8);}
+    100% {width: 100px; height: 100px; left: 130px; top: 80px; background-color: rgb(250, 205, 3, 0.8);}
 }
 @keyframes sunup {
     0% {width: 100px; height: 100px; left: 115px; top: 600px; background-color:rgba(172, 34, 0, 0);}
     5% {width: 100px; height: 100px; background-color:rgba(172, 34, 0, 0.8);}
     100% {width: 100px; height: 100px; left: 130px; top: 80px; background-color:rgba(255, 155, 6, 0.6);}
 }
-@keyframes sundown {
+@keyframes sunmove {
     0% {width: 100px; height: 100px; left: 130px; top: 80px; background-color:rgba(255, 155, 6, 0.6);}
-    100% {width: 100px; height: 100px; left: 430px; top: 590px; background-color:rgba(255, 155, 6, 0);}
+    100% {width: 100px; height: 100px; left: 450px; top: 240px; background-color:rgba(192, 0, 0, 0.6);}
+}
+@keyframes sundown {
+    0% {width: 100px; height: 100px; left: 450px; top: 240px; background-color:rgba(192, 0, 0, 0.6);}
+    30% {background-color:rgba(192, 0, 0, 0.6);}
+    100% {width: 100px; height: 100px; left: 640px; top: 590px; background-color:rgba(192, 0, 0, 0);}
 }
 @keyframes mountaincolor {
-    50% {border-color: transparent transparent rgb(21, 8, 56) transparent;}
+    50% {border-color: transparent transparent rgb(25, 8, 70) transparent;}
     100% {border-color: transparent transparent rgb(144, 154, 155) transparent;}
 }
 @keyframes shadowcolor {
@@ -139,11 +178,19 @@ body {
 }
 @keyframes mountaincolor1 {
     0% {border-color: transparent transparent rgb(144, 154, 155) transparent;}
-    100% {border-color: transparent transparent rgb(176, 207, 194) transparent;}
+    100% {border-color: transparent transparent rgb(167, 8, 8) transparent;}
 }
 @keyframes shadowcolor1 {
     0% {border-color: transparent transparent rgb(101, 110, 110) transparent;}
-    100% {border-color: transparent transparent rgb(15, 94, 78) transparent;}
+    100% {border-color: transparent transparent rgb(233, 179, 2) transparent;}
+}
+@keyframes mountaincolor2 {
+    0% {border-color: transparent transparent rgb(167, 8, 8) transparent;}
+    100% {border-color: transparent transparent rgb(25, 8, 70) transparent;}
+}
+@keyframes shadowcolor2 {
+    0% {border-color: transparent transparent rgb(233, 179, 2) transparent;}
+    100% {border-color: transparent transparent rgb(10, 2, 44) transparent;}
 }
 @keyframes bgcolor {
     0% {background-color: black;}
@@ -151,7 +198,22 @@ body {
 }
 @keyframes bgcolor1 {
     0% {background-color: rgb(122, 0, 0);}
-    100% {background-color: rgb(200, 173, 230);}
+    100% {background-color: rgb(214, 93, 22);}
+}
+@keyframes bgcolor2 {
+    0% {background-color: rgb(214, 93, 22);}
+    100% {background-color: black;}
+}
+@keyframes starshow {
+    0% {background-color: rgb(252, 249, 222, 0);}
+    50% {background-color: rgb(252, 249, 222, 1);}
+    100% {background-color: rgb(252, 249, 222, 1);}
+}
+@keyframes starblink {
+    0% {width: 5.5px; height: 5.5px; background-color: rgb(252, 249, 222, 1);}
+    30% {width: 5px; height: 5px; background-color: rgb(252, 250, 230, 0.5);}
+    65% {width: 5.5px; height: 5.5px; background-color: rgb(253, 251, 234, 1);}
+    100% {width: 5px; height: 5px; background-color: rgb(252, 249, 222, 0.5);}
 }
 @media (min-width: 1100px) {
     .moon {
@@ -200,7 +262,7 @@ body {
         animation-fill-mode: forwards;
     }
 }
-@media (max-width: 900px) {
+@media (min-width: 700px) and (max-width: 900px) {
     .light {
         display: none;
     }
@@ -208,8 +270,8 @@ body {
         display: none;
     }
     .sun {
-        animation-name: sundown;
-        animation-duration: 7s;
+        animation-name: sunmove;
+        animation-duration: 6s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
     }
@@ -230,5 +292,62 @@ body {
         animation-duration: 5s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
+    }
+}
+@media (max-width: 700px) {
+    .light {
+        display: none;
+    }
+    .moon {
+        display: none;
+    }
+    .sun {
+        animation-name: sundown;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    .mountains {
+        animation-name: mountaincolor2;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    .shadow {
+        animation-name: shadowcolor2;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    body {
+        animation-name: bgcolor2;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    .stars {
+        animation-name: starshow;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    .star1 {
+        animation-name: starblink;
+        animation-duration: 6s;
+        animation-delay: 2.5s;
+        animation-iteration-count: infinite;
+    }
+    .star4 {
+        animation-name: starblink;
+        animation-duration: 6s;
+        animation-delay: 2.6s;
+        animation-iteration-count: infinite;
+    }
+    .star7 {
+        animation-name: starblink;
+        animation-duration: 6s;
+        animation-delay: 2.75s;
+        animation-iteration-count: infinite;
     }
 }
